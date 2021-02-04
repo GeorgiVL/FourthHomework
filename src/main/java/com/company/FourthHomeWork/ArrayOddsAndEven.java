@@ -23,15 +23,11 @@ public class ArrayOddsAndEven {
         for(int i = 0; i < arr.size(); i ++) {
             if(arr.get(i) %2 != 0){
                 sumOdd += arr.get(i);
+            } else {
+                sumEven += arr.get(i);
             }
         }
         System.out.println("The sum of the Odds is: " + sumOdd);
-
-        for (int a = 0; a < arr.size(); a ++) {
-            if (arr.get(a) %2 == 0) {
-                sumEven += arr.get(a);
-            }
-        }
-        System.out.println("The sum of the Odds is: " + sumEven);
+        System.out.println("The sum of the Evens is: " + sumEven);
     }
 }
